@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GaKa</title>
+</head>
+<body>
+    <script>
+let namaKaryawan = prompt(" Masukkan Nama Karyawan ");
+let gajiPokokKaryawan = parseFloat(prompt(" Masukkan Gaji Pokok Karyawan: "));
+
+
+let tunjangan = 0.2 * gajiPokokKaryawan;
+let pajak = 0.15   * (gajiPokokKaryawan + tunjangan);
+let gajiBersih = gajiPokokKaryawan + tunjangan - pajak;
+
+console.log("Nama Karyawan:" , namaKaryawan);
+console.log("Tunjangan:" , tunjangan);
+console.log("Pajak:" , pajak);
+console.log("Gaji Bersih:" , gajiBersih);
+
+    </script> 
+</body>
+</html>
